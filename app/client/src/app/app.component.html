@@ -1,0 +1,20 @@
+<div>
+  <nav class="navbar navbar-dark bg-dark main-nav">
+    <a class="navbar-brand title" href="/" matTooltip="Retournez à l'accueil">INF3710 - TP4</a>
+    <div class="navbar-expand mr-auto">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" routerLink="/registration">Créer une réservation</a>
+        <a class="nav-item nav-link active" routerLink="/reservations">Accéder aux réservations</a>
+        <a class="nav-item nav-link active" routerLink="/search">Rechercher un membre</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="home" *ngIf="route == ''">
+    <p>
+      Coopérative de co-voiturage
+    </p>
+    <!-- <button mat-raised-button color="primary" class="btn" routerLink="/registration">Se connecter<mat-icon>arrow_right</mat-icon></button> -->
+  </div>
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,30 @@
+<div class="container-column">
+  <p id="title">Créer une réservation</p>
+  <form (ngSubmit)="createReservation()">
+    <!-- <div class="form-group">
+      <label for="reservationId">ID de réservation</label>
+      <input type="text" id="reservationId" name="reservationId" [(ngModel)]="reservationForm.value.reservationId" required>
+    </div> -->
+    <div class="form-group">
+      <label for="beginningPeriode">Début </label>
+      <input type="date" id="beginningPeriode" name="beginningPeriode" [(ngModel)]="reservationForm.value.beginningPeriode" required>
+    </div>
+    <div class="form-group">
+      <label for="endingPeriode">Fin</label>
+      <input type="date" id="endingPeriode" name="endingPeriode" [(ngModel)]="reservationForm.value.endingPeriode" required>
+    </div>
+    <div class="form-group">
+      <label for="requirements">Requis additionnels</label>
+      <textarea id="requirements" name="requirements" [(ngModel)]="reservationForm.value.requirements"></textarea>
+    </div>
+    <!-- <div class="form-group">
+      <label for="vehiculeId">ID du véhicule</label>
+      <input type="text" id="vehiculeId" name="vehiculeId" [(ngModel)]="reservationForm.value.vehiculeId" required>
+    </div>
+    <div class="form-group">
+      <label for="memberId">ID du membre</label>
+      <input type="text" id="memberId" name="memberId" [(ngModel)]="reservationForm.value.memberId" required>
+    </div> -->
+    <button type="submit">Créer la réservation</button>
+  </form>
+</div>

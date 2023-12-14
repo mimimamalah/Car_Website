@@ -1,0 +1,27 @@
+.reservation {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  p {
+    margin: 0;
+  }

@@ -1,0 +1,13 @@
+<div class="main-container column">
+    <div class="search-container">
+        <label for="searchQuery">Écrire le nom d'un membre </label>
+        <input type="text" [(ngModel)]="searchQuery" name="searchQuery" (keyup.enter)="search()">
+    </div>
+    <button (click)="search()">Valider</button>
+    <p id="label-result">Résultats de la recherche :</p>
+    <div class="result-container column">
+        <div class="sub-container column" *ngFor="let member of memberResult">            
+            <app-member-details [member]="member"></app-member-details>
+        </div>  
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="container-column">
+    <p id="title">Liste des réservations</p>
+    <div class="scroll-space">
+        <div class="container-column reservations" *ngFor="let reservation of reservations">
+            <app-reservation-card *ngIf="reservation" [reservation] = "reservation"></app-reservation-card>                
+        </div>
+    </div>
+    <button routerLink="/registration">Créer une réservation</button>
+</div>

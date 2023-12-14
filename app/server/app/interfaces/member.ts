@@ -1,0 +1,17 @@
+export interface Member {
+    mid	: number,
+	nom : string,		
+	prenom : string,		
+    nomemplacement : string,
+    mdp : string,
+    numero : string,
+    rue : string,
+    ville : string,
+    codepostal : string,
+    numerocomptebanque : string,
+	nombanque : string,
+    addrelectronique : string,
+    age : number,
+    dernieraccident : Date,
+    permisconduite : string,
+}
