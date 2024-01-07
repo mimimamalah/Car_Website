@@ -1,14 +1,31 @@
-Avant de lancer l'application :
+# Reservation Website
 
-#1 Ouvrir le répertoire du projet - ouvrir un terminal dans le dossier 'server' - lancer 'npm install', puis 'npm ci'.
-#2 Aller dans le dossier 'client' - lancer 'npm install', puis 'npm ci'
-#3 Ouvrir le fichier database.service.ts dans server/services
-    - Modifier les champs dans la configuration pour la connection avec Postgresql - database et password
+Simple Website project for a database course
 
+## Pre-Launch Setup
 
-Pour lancer l'application : 
+### Server Setup
+1. Open the project directory.
+2. Open a terminal in the 'server' folder.
+3. Run `npm install`, followed by `npm ci`.
 
-#1 Aller dans le dossier 'server' - ouvrir un terminal - lancer 'npm start'
-    - Vous devriez voir un message indiquant que vous êtes sur le port 3000
-#2 Aller dans le dossier 'client' - ouvrir un terminal - lancer 'npm start'
-    - L'application s'ouvrira dans une nouvelle page.# Car_Website
+### Client Setup
+1. Navigate to the 'client' folder.
+2. Execute `npm install`, followed by `npm ci`.
+
+### Database Configuration
+1. Open the `database.service.ts` file in the `server/services` directory.
+2. Modify the fields in the configuration to connect with PostgreSQL, specifically the `database` and `password`.
+
+## Launching the Application
+
+### Starting the Server
+1. Go to the 'server' folder.
+2. Open a terminal and run `npm start`.
+    - You should see a message indicating that the server is running on port 3000.
+
+### Starting the Client
+1. Move to the 'client' folder.
+2. Open a terminal and execute `npm start`.
+    - The application will open in a new browser page.
+
