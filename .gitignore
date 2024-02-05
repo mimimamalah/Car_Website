@@ -21,6 +21,50 @@ bower_components/
 # Compiled CSS
 *.css
 
+# Angular specific
+.angular/
+*.ng-persist/
+*.ng-factory/
+
+# Logs
+logs/
+*.log
+
+# Test coverage
+coverage/
+
+# Temporary files
+.tmp/
+
+# Build process
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+# Node modules
+node_modules/
+
+# Compiled output
+dist/
+
+# Dependency directory
+bower_components/
+
+# Environment variables
+.env
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Compiled TypeScript
+*.js
+*.js.map
+
+# Compiled CSS
+*.css
+
 # Logs
 logs/
 *.log
