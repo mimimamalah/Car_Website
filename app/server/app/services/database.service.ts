@@ -8,9 +8,9 @@ import "reflect-metadata";
 export class DatabaseService {
   public connectionConfig: pg.ConnectionConfig = {
     user: "postgres",
-    database: "TP4",
+    database: "postgres",
     password: "root",
-    port: 5432,          // Attention ! Peut aussi être 5433 pour certains utilisateurs
+    port: 5433,          // Attention ! Peut aussi être 5433 pour certains utilisateurs
     host: "localhost",
     keepAlive: true
   };

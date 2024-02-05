@@ -31,6 +31,8 @@ CREATE TABLE IF NOT EXISTS Vehicule (
     marque                  VARCHAR(15) NOT NULL,
     modele                  VARCHAR(15) NOT NULL,
 	nomEmplacement			VARCHAR(20) DEFAULT NULL,
+	imageV1					VARCHAR(200) NOT NULL,
+	imageV2					VARCHAR(200) NOT NULL,
 	odometre				INT NOT NULL CHECK (odometre > 0),
 	miseEnService 			DATE NOT NULL CHECK (miseEnService > '1900-01-01'),
 	consommation			NUMERIC(4,2) NOT NULL CHECK (consommation > 0),

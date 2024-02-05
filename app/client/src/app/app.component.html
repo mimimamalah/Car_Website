@@ -1,20 +1,283 @@
 <div>
-  <nav class="navbar navbar-dark bg-dark main-nav">
-    <a class="navbar-brand title" href="/" matTooltip="Retournez à l'accueil">INF3710 - TP4</a>
-    <div class="navbar-expand mr-auto">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" routerLink="/registration">Créer une réservation</a>
-        <a class="nav-item nav-link active" routerLink="/reservations">Accéder aux réservations</a>
-        <a class="nav-item nav-link active" routerLink="/search">Rechercher un membre</a>
+  <nav>
+    <ul>
+      <div class="navbar-expand mr-auto">
+        <li><a class="navbar-brand title" href="/" matTooltip="Retournez à l'accueil"><b> ML SHARE : Car's Sharing Cooperative</b>&nbsp;</a></li>
+        <li><a class="nav-item nav-link active" routerLink="/member">Become a member</a></li>
+        <li><a class="nav-item nav-link active" routerLink="/registration">Create a Reservation</a></li>
+        <li><a class="nav-item nav-link active" routerLink="/reservations">Access Reservations</a></li>
+        <li> <a class="nav-item nav-link active" routerLink="/search">Search for a Member</a></li>
+        <li><a class="nav-item nav-link active" routerLink="/cars">Search for a Car</a></li>
+        <li><a href="#">Contact</a></li>
       </div>
-    </div>
-  </nav>
+    </ul>
+</nav>
 
   <div class="home" *ngIf="route == ''">
-    <p>
-      Coopérative de co-voiturage
-    </p>
-    <!-- <button mat-raised-button color="primary" class="btn" routerLink="/registration">Se connecter<mat-icon>arrow_right</mat-icon></button> -->
   </div>
   <router-outlet></router-outlet>
 </div>
+
+<div>
+
+  <div class="main">
+  
+  <div class="title">
+   <a href="#" target="window" id="title" class="textmain">
+    <b>Car's</b>&nbsp;Collection
+   </a><br>
+   <div class="tagline_box">
+    <p class="tagline textmain"> A different kind of company. </p>
+    <p class="tagline textmain"> A different kind of car. </p>
+   </div>
+   <hr class="textmain" style="width: 15%; size: 0;" />
+  </div>
+ </div>
+ 
+ <div class="feature">
+  <nav>
+   <ul class="main_option" id="main_option">
+    
+   </ul>
+   <div class="menu">
+    <i id="menu_icon" style="margin:0; padding: 0;" class="material-icons">dehaze</i>
+    <p id="menu" style="margin:0;">More</div>
+  </nav>
+  </div>
+  <div class="body">
+    
+    <div class="main_container">
+     <div class="container fade-in one">
+      <img src="https://cdn.icon-icons.com/icons2/2402/PNG/512/ferrari_logo_icon_145829.png" alt="ferrari 488GTB" class="image">
+      <div class="detail">
+       <div class="text">
+        <p><b>Ferrari</b>
+         <p>
+          <p>The <b>horse</b> was originally the symbol of Count Francesco Baracca, a legendary "asso" (ace) of the Italian air force during <b>World Wa</b>r I, who painted it on the side of his planes.</p>
+       </div>
+      </div>
+      <div class="info">
+       <p>Ferrari</p>
+      </div>
+     </div>
+     <div class="container fade-in two">
+      <img src="https://cdn.icon-icons.com/icons2/2402/PNG/512/spyker_logo_icon_145770.png" alt="Spyker" class="image">
+      <div class="detail">
+       <div class="text">
+        <p><b>Spyker</b>
+         <p>
+          <p>The company's motto is "<b>For the tenacious, no road is impassable</b>". The marque's logo displays the rotary engine of an <b>airplane</b>, a reference to the historic Spyker company which manufactured aircraft.</p>
+       </div>
+      </div>
+      <div class="info">
+       <p>Spyker</p>
+      </div>
+     </div>
+     <div class="container fade-in three">
+      <img src="http://1.bp.blogspot.com/-nRATYf46qUg/Ua1gxO9CELI/AAAAAAAAwJQ/iRMhPa4hjwc/s1600/lamborghini%2Blogo.jpg" alt="lamborghini" class="image">
+      <div class="detail">
+       <div class="text">
+        <p><b>Lamborghini</b>
+         <p>
+          <p>The <b>Lamborghini</b> logo shows a bull or Taurus that is the brand founder's zodiac sign. Ferruccio Lamborghini was extremely interested in Spanish bullfighting sport that is also shown in the <b>logo</b>.</p>
+       </div>
+      </div>
+      <div class="info">
+       <p>Lamborghini</p>
+      </div>
+     </div>
+     <div class="container fade-in four">
+      <img src="http://3.bp.blogspot.com/-nWpmR0LPmic/ULYcanZxJkI/AAAAAAAAEVY/H2w7PlhwyQ8/s1600/Aston+Martin+Logo+1.jpg" alt="Aston Martin" class="image">
+      <div class="detail">
+       <div class="text">
+        <p><b>Aston Martin</b></p>
+        <p>The Aston Martin name came into existence in 1914 following one of Lionel Martin's successful runs at the Aston Hill Climb in Buckinghamshire, England.</p>
+       </div>
+      </div>
+      <div class="info">
+       <p>Aston Martin</p>
+      </div>
+     </div>
+     <div class="container fade-in five">
+      <img src="https://i.pinimg.com/564x/62/a5/46/62a546b4d5cca931a39da25162009a99--wallpaper-for-iphone-mobile-wallpaper.jpg" alt="Porsche" class="image">
+      <div class="detail">
+       <div class="text">
+        <p><b>Porsche</b></p>
+        <p><b>Porsche's</b> company <b>logo</b> was based on the coat of arms of the Free People's State of Württemberg of former Weimar Germany, which had Stuttgart as its capital.</p>
+       </div>
+      </div>
+      <div class="info">
+       <p>Porsche</p>
+      </div>
+     </div>
+     <div class="container fade-in six">
+      <img src="http://lofrev.net/wp-content/photos/2014/07/Bugatti-Symbol-250x150.jpg" alt="Bugatti" class="image">
+      <div class="detail">
+       <div class="text">
+        <p><b>Bugatti</b></p>
+        <p><b>Porsche's</b> company <b>logo</b> was based on the coat of arms of the Free People's State of Württemberg of former Weimar Germany, which had Stuttgart as its capital.</p>
+       </div>
+      </div>
+      <div class="info">
+       <p>Bugatti</p>
+      </div>
+     </div>
+     <div class="container fade-in seven">
+      <img src="http://www.topnews.in/files/Ford_Logo_Large.jpg" alt="Ford" class="image">
+      <div class="detail">
+       <div class="text">
+        <p><b>Ford</b></p>
+        <p>The <b>Ford </b>signature becomes encapsulated in an oval. While 1912 was when this new design became widely used, it first appeared in 1907.</p>
+       </div>
+      </div>
+      <div class="info">
+       <p>Ford</p>
+      </div>
+     </div>
+     <div class="container fade-in eight">
+      <img src="http://www.car-brand-names.com/wp-content/uploads/2015/09/Dodge-emblem.jpg" alt="Dodge" class="image">
+      <div class="detail">
+       <div class="text">
+        <p><b>Dodge</b></p>
+        <p><b>Dodge</b> was originally a supplier of <b>parts</b> and <b>assemblies</b> for Detroit-based automakers and began building complete automobiles under the "Dodge Brothers" brand in 1914</p>
+       </div>
+      </div>
+      <div class="info">
+       <p>Dodge</p>
+      </div>
+     </div>
+     <div class="container fade-in nine">
+      <img src="http://www.car-brand-names.com/wp-content/uploads/2015/08/Chevrolet-logo-3.jpg" alt="Chevrolet" class="image">
+      <div class="detail">
+       <div class="text">
+        <p><b>Chevrolet</b></p>
+        <p>The real story behind <b>Chevrolet's</b> bow tie. You may have heard the legend of how Chevrolet's co-founder Billy Durant came up with its famous bowtie logo when he saw the design on wallpaper in a Paris hotel. </p>
+       </div>
+      </div>
+      <div class="info">
+       <p>Chevrolet</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  
+  <footer class="footer fade-in">
+   <div class="social">
+    <div class="icon">
+     <a href="javascript:void(0)" target="window">
+      <img src="https://image.ibb.co/bBa7L6/if_1_Media_social_website_facebook_2657542.png" class="def_img">
+      <p class="soci_name" id="fb">facebook</p>
+      <img src="https://image.ibb.co/eLP1f6/2657542_512.png" class="ori_img">
+     </a>
+    </div>
+    <div class="icon" id="twitter">
+     <a href="javascript:void(0)" target="window">
+      <img src="https://image.ibb.co/kTg3tR/if_12_Media_social_website_Twitter_2657545.png" class="def_img">
+      <p class="soci_name" id="twit">twitter</p>
+      <img src="https://image.ibb.co/fPSbDR/2657545_512.png" class="ori_img">
+     </a>
+    </div>
+    <div class="icon">
+     <a href="javascript:void(0)" target="window">
+      <img src="https://image.ibb.co/mMvUYR/if_11_Media_social_website_youtube_2657544.png" class="def_img">
+      <p class="soci_name" id="utube">youtube</p>
+      <img src="https://image.ibb.co/dCjdSm/2657544_512.png" class="ori_img">
+     </a>
+    </div>
+   </div>
+   <hr size="1px" style="font-weight:bold; width:80%; color: #4E4F50">
+   <div class="footer_body">
+    <div class="footer_container">
+     <div class="footer_topic_main">
+      <div class="footer_topic">
+       <p class="texthead">
+        <a href="javascript:void(0)" class="texthead">Reviews</a>
+       </p>
+       <ul>
+        <li class="footer_text"><a href="" class="">First Drives</a></li>
+        <li class="footer_text"><a href="" class="">Instrumented Tests</a></li>
+        <li class="footer_text"><a href="" class="">Comparison Tests</a></li>
+        <li class="footer_text"><a href="" class="">Long-Term Road Tests</a></li>
+        <li class="footer_text"><a href="" class="">From the Review Vault</a></li>
+       </ul>
+      </div>
+      <div class="footer_topic">
+       <p class="texthead">
+        <a href="javascript:void(0)" class="texthead">NEWS</a>
+       </p>
+       <ul>
+        <li class="footer_text"><a href="" class="">Spy Photos</a></li>
+        <li class="footer_text"><a href="" class="">Auto Shows</a></li>
+        <li class="footer_text"><a href="" class="">Blog</a></li>
+       </ul>
+      </div>
+      <div class="footer_topic">
+       <p class="texthead">
+        <a href="javascript:void(0)" class="texthead">Features</a>
+       </p>
+       <ul>
+        <li class="footer_text"><a href="" class="">Spy Photos</a></li>
+        <li class="footer_text"><a href="" class="">Auto Shows</a></li>
+        <li class="footer_text"><a href="" class="">Blog</a></li>
+       </ul>
+      </div>
+     </div>
+     <div class="footer_topic_main">
+      <div class="footer_topic">
+       <p class="texthead">
+        <a href="javascript:void(0)" class="texthead">Features</a>
+       </p>
+       <ul>
+        <li class="footer_text"><a href="" class="">View Cars for Sale</a></li>
+        <li class="footer_text"><a href="" class="">2016 Editors' Choice</a></li>
+        <li class="footer_text"><a href="" class="">Ford F-150</a></li>
+        <li class="footer_text"><a href="" class="">Jeep Wrangler</a></li>
+        <li class="footer_text"><a href="" class="">Ford Escape</a></li>
+        <li class="footer_text"><a href="" class="">Honda Accord</a></li>
+        <li class="footer_text"><a href="" class="">Jeep Grand Cherokee</a></li>
+       </ul>
+      </div>
+      <div class="footer_topic">
+       <p class="texthead">
+        <a href="javascript:void(0)" class="texthead">About car & driver</a>
+       </p>
+       <ul>
+        <li class="footer_text"><a href="" class="">Subscribe</a></li>
+        <li class="footer_text"><a href="" class="">User Sitemap</a></li>
+        <li class="footer_text"><a href="" class="">Contact Us</a></li>
+        <li class="footer_text"><a href="" class="">Subscriptions/Customer</a></li>
+        <li class="footer_text"><a href="" class="">Service</a></li>
+        <li class="footer_text"><a href="https://goo.gl/forms/QIjvTGpiCd3xQvLi2" target="window">Website Feedback</a></li>
+       </ul>
+      </div>
+      <div class="footer_topic">
+       <p class="texthead">
+        <a href="javascript:void(0)" class="texthead">Follow us</a>
+       </p>
+       <ul>
+        <li class="footer_text"><a href="" class="">Facebook</a></li>
+        <li class="footer_text"><a href="" class="">Twiiter</a></li>
+        <li class="footer_text"><a href="" class="">YouTube</a></li>
+        <li class="footer_text"><a href="" class="">Instagram</a></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="terms">
+    <div class="rights_main inline-block">
+     <span class="terms_containt_main terms_text">© 2017 Car's Collaction, Inc. All Rights Reserved., </span></div>
+    <div class="rights_mini"><span class="terms_containt_mini terms_text">© 2017 Car's Collaction, Inc. All Rights Reserved.,</span></div>
+    <div class="inline-block">
+     <a href="javascript:void(0)" class="terms_containt inline-block terms_text">Privacy Policy</a>
+     <p class="terms_text inline-block" style="margin: 0px;">|</p>
+     <a href="javascript:void(0)" class="terms_containt inline-block terms_text">Your California</a>
+     <p class="terms_text inline-block" style="margin: 0px;">|</p>
+     <a href="javascript:void(0)" class="terms_containt inline-block terms_text">Privacy Rights</a>
+     <p class="terms_text inline-block" style="margin: 0px;">|</p>
+     <a href="javascript:void(0)" class="terms_containt inline-block terms_text">Interest-Based Ads</a>
+     <p class="terms_text inline-block" style="margin: 0px;">|</p>
+     <a href="javascript;void(0)" class="terms_containt inline-block terms_text">Terms of Use</a>
+    </div>
+   </div>
+  </footer>

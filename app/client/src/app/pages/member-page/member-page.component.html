@@ -1,0 +1,110 @@
+<div class="hexa-membership-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="hms-hdng-con">
+                  <span class="hexa-round-short-heading orange">Choose Your Membership</span>
+                  <h2 class="section-common-heading">ML SHARE Memberships</h2>
+                  <h4>An Array of <br/>ML SHARE Memberships</h4>
+                  <p class="haas-rc-col-content">Welcome to our cooperative community! We offer diverse membership options tailored
+                     to meet your specific needs and preferences. Explore the options below to find the perfect fit for you:</p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <div class="hms-type-con">
+
+                  <div class="hms-tc-column hms-column-1">
+                      <div class="hms-tcb-item">
+                          <div class="hms-tcb-item-shape">
+                              <div class="hms-tcb-item-content-box">
+                                  <img src="https://dummyimage.com/300x300/000/fff" class="img-fluid hms-tcb-icb-img" alt="">
+                                  <h2 class="hms-tcb-icb-heading">COOP Membership</h2>
+                                  <p class="hms-tcb-icb-content">If you are interested in trying out ML services while maintaining the greatest possible flexibility for your activities,
+                                     the Free Spirit membership may be right for you. Also known as the TFS, this shared office space arrangement offers you</p>
+                                  <a class="btn btn-primary btn-orange" href="comingsoon" data-toggle="modal" data-target=".modal">Know More</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="hms-tc-column  hms-column-2">
+                      <div class="hms-tcb-item">
+                          <div class="hms-tcb-item-shape">
+                              <div class="hms-tcb-item-content-box">
+                                  <img src="https://dummyimage.com/300x300/000/fff" class="img-fluid hms-tcb-icb-img" alt="">
+                                  <h2 class="hms-tcb-icb-heading">CAR-SHARING Membership</h2>
+                                  <p class="hms-tcb-icb-content">Also known as the YVO, Your Virtual Office allows you to work from the comfort of your own home while enjoying all the amenities of a real office. You can access many practical benefits of YVO membership without the commute.</p>
+                                  <a class="btn btn-primary btn-orange" href="comingsoon" data-toggle="modal" data-target=".modal">Know More</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="hms-tc-column  hms-column-3">
+                      <div class="hms-tcb-item">
+                          <div class="hms-tcb-item-shape">
+                              <div class="hms-tcb-item-content-box">
+                                  <img src="https://dummyimage.com/300x300/000/fff" class="img-fluid hms-tcb-icb-img" alt="">
+                                  <h2 class="hms-tcb-icb-heading">MY HEXAN HOME</h2>
+                                  <p class="hms-tcb-icb-content">At the top end of our membership lineup, the HEXAN Home membership includes private offices to allow the most comfortable and practical working experience for you and your staff members. Our private offices are fully furnished</p>
+                                  <a class="btn btn-primary btn-orange" href="comingsoon" data-toggle="modal" data-target=".modal">Know More</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="hms-tc-column  hms-column-4">
+                      <div class="hms-tcb-item">
+                          <div class="hms-tcb-item-shape">
+                              <div class="hms-tcb-item-content-box">
+                                  <img src="https://dummyimage.com/300x300/000/fff" class="img-fluid hms-tcb-icb-img" alt="">
+                                  <h2 class="hms-tcb-icb-heading">FULLY FLEDGED HEXAN</h2>
+                                  <p class="hms-tcb-icb-content">If your business needs a comprehensive solution for temporary working space, the HEXAN may be the right membership level for you. Dedicated desks make it much easier for you and your staff members to maintain high levels of productivity</p>
+                                  <a class="btn btn-primary btn-orange" href="comingsoon" data-toggle="modal" data-target=".modal">Know More</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--End Hexa Membership-->
+
+<div class="center-container">
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <label for="member">Membre</label>
+      <select name="member" formControlName="member">
+        <optgroup label="Membre coop">
+          <option *ngFor="let option of coopMemberOptions" [value]="option">{{option}}</option>
+        </optgroup>
+        <optgroup label="Membre autopartage">
+          <option *ngFor="let option of carpoolingMemberOptions" [value]="option">{{option}}</option>
+        </optgroup>
+      </select>
+
+      <label for="place">Emplacement</label>
+      <select name="place" formControlName="place" (change)="onSelect($event.target.value)">
+        <option *ngFor="let option of placeOptions" [value]="option">{{option}}</option>
+      </select>
+
+      <label>Date de début</label>
+      <input type="datetime-local" formControlName="startDate">
+
+      <label>Date de fin</label>
+      <input type="datetime-local" formControlName="endDate">
+
+      <label for="requirements">Exigences supplémentaires</label>
+      <input type="text" name="requirements" formControlName="requirements">
+
+      <label for="vehicle">Véhicule</label>
+      <select name="vehicle" formControlName="vehicle">
+        <option *ngFor="let option of vehicleOptions" [value]="option">{{option}}</option>
+      </select>
+
+      <button type="submit">Créer la réservation</button>
+    </form>
+</div>
