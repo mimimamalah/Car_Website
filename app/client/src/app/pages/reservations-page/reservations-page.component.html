@@ -1,6 +1,6 @@
 <div class="container-column">
-    <p id="title">Liste des réservations</p>
-    <div class="scroll-space">
+    <p id="title">FIND A PARTICULAR RESERVATION</p>
+    <div class="wrapper">
         <div class="container-column reservations" *ngFor="let reservation of reservations">
             <app-reservation-card *ngIf="reservation" [reservation] = "reservation"></app-reservation-card>                
         </div>

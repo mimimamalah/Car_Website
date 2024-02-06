@@ -7,6 +7,7 @@ import { Reservation } from "../interfaces/reservation";
 import { Member } from "../interfaces/member";
 import { Location } from "../interfaces/location";
 import { Vehicle } from "../interfaces/vehicle";
+import { TypeVehicule } from "../interfaces/typevehicle";
 
 @Injectable()
 export class CommunicationService {
@@ -49,6 +50,11 @@ export class CommunicationService {
   getVehicles(): Observable<Vehicle[]> {
     return this.http.get<Vehicle[]>(`${this.BASE_URL}/vehicles`)
     .pipe(catchError(this.handleError<Vehicle[]>('/vehicles')));
+  }
+  
+  getTypeVehicles(): Observable<TypeVehicule[]> {
+    return this.http.get<TypeVehicule[]>(`${this.BASE_URL}/typevehicles`)
+    .pipe(catchError(this.handleError<TypeVehicule[]>('/typevehicles')));
   }
 
   getLastReservation(): Observable<Reservation[]> {

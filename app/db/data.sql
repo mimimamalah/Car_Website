@@ -11,61 +11,39 @@ INSERT INTO TypeVehicule VALUES ('hybride', 10.00, 0.25, 150000, 7);
 INSERT INTO TypeVehicule VALUES ('regulier', 8.00, 0.38, 180000);
 INSERT INTO TypeVehicule VALUES ('miniCamionette', 12.00, 0.45, 220000);
 
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, imageV1, imageV2, odometre, miseEnService, consommation, type)
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
     VALUES ('P25 DRF', 'Honda', 'Accord', 'Ahuntsic',
-         'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-        'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-        100000, '2015-01-01', 8, 'regulier');
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, imageV1, imageV2, odometre, miseEnService, consommation, type)
+        4, 100000, '2015-01-01', 8, 'regulier');
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
     VALUES ('H14 FLA', 'Volkswagen', 'Jetta', 'Ahuntsic',
-         'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-      24680, '2019-01-01', 7.5, 'regulier');
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement,imageV1, imageV2, odometre, miseEnService, consommation, type)
-    VALUES ('Q13 JVR', 'Ford', 'Fiesta', 'Québec',
-         'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-      18000, '2020-01-01', 7.60, 'regulier');
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, imageV1, imageV2, odometre, miseEnService, consommation, type)
-    VALUES ('M22 GDJ', 'Honda', 'Insight', 'Laval',
-         'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-      110000, '2014-01-01', 3.4, 'hybride');
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, imageV1, imageV2, odometre, miseEnService, consommation, type)
-    VALUES ('Y07 KHR', 'Honda', 'Insight', 'Sherbrooke',
-         'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-      12400, '2021-01-01', 3.6, 'hybride');
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, imageV1, imageV2, odometre, miseEnService, consommation, type)
-    VALUES ('X99 NJI', 'Ford', 'Transit', null,
-         'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-      76240, '2017-01-01', 12.6, 'miniCamionette');
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, imageV1, imageV2, odometre, miseEnService, consommation, type)
-    VALUES ('W03 XBF', 'Ford', 'Transit', null,
-         'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-      62900, '2018-01-01', 12.7, 'miniCamionette');
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, imageV1, imageV2, odometre, miseEnService, consommation, type)
+     5,24680, '2019-01-01', 7.5, 'regulier');
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
     VALUES ('MER XBF', 'Mercedes', 'AMG', null,
-         'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-      62900, '2018-01-01', 12.7, 'regulier');
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, imageV1, imageV2, odometre, miseEnService, consommation, type)
+     4,62900, '2018-01-01', 12.7, 'regulier');
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
     VALUES ('LAM XBF', 'Lamborghini', 'Huracan', null,
-         'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-      62900, '2018-01-01', 12.7, 'regulier');
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, imageV1, imageV2, odometre, miseEnService, consommation, type)
+    4, 62900, '2018-01-01', 12.7, 'regulier');
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
     VALUES ('FER XBF', 'Ferrari', '812', null,
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-      62900, '2018-01-01', 12.7, 'regulier');
-INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, imageV1, imageV2, odometre, miseEnService, consommation, type)
+     4,62900, '2018-01-01', 12.7, 'regulier');
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
+    VALUES ('Y07 KHR', 'Honda', 'Insight', 'Sherbrooke',
+     4, 12400, '2021-01-01', 3.6, 'hybride');
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
     VALUES ('MCL XBF', 'McLaren', '720 S', null,
-    'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-111.jpg',
-     'https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/wp-content/uploads/2016/02/2016-Lamborghini-Huracan-LP610-4-Spyder-101.jpg',
-       62900,'2018-01-01', 12.7, 'regulier');
+    4, 62900,'2018-01-01', 12.7, 'regulier');
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
+    VALUES ('Q13 JVR', 'Ford', 'Fiesta', 'Québec',
+    4,18000, '2020-01-01', 7.60, 'regulier');
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
+    VALUES ('M22 GDJ', 'Honda', 'Insight', 'Laval',
+    5,110000, '2014-01-01', 3.4, 'hybride');
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
+    VALUES ('X99 NJI', 'Lamborghini', 'Transit', null,
+     4,76240, '2017-01-01', 12.6, 'miniCamionette');
+INSERT INTO Vehicule (plaqueImmatriculation, marque, modele, nomEmplacement, rating, odometre, miseEnService, consommation, type)
+    VALUES ('W03 XBF', 'Mercedes', 'Transit', null,
+   4,62900, '2018-01-01', 12.7, 'miniCamionette');
 
 INSERT INTO Assurance VALUES ('ABCDE12345', 'P25 DRF', '2022-05-01', '2023-05-01', 'AssureAuto');
 INSERT INTO Assurance VALUES ('ATCBE81673', 'H14 FLA', '2022-12-01', '2023-12-01', 'PolyAssure');

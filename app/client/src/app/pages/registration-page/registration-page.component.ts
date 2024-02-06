@@ -35,7 +35,7 @@ export class RegistrationPageComponent {
       requirements: [null],
       vehicle: ['', Validators.required],
     });
-    
+  
     this.communicationService.getLocations().subscribe((response) => {
       if (response) {
         this.placeOptions = response.map((location) => location.nomemplacement);

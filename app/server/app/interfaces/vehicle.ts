@@ -3,7 +3,6 @@ export interface Vehicle {
     marque: string,
     modele: string,
     nomemplacement: string,
-    imageV1: string,
-    imageV2: string,
+    rating: number,
     odometre: number
 }

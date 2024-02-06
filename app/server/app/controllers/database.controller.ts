@@ -29,6 +29,8 @@ export class DatabaseController {
     router.get('/vehicles', this.getVehicles.bind(this));
 
     router.get('/lastReservation', this.getLastReservation.bind(this));
+
+    router.get('/typevehicles', this.getTypeVehicles.bind(this));
     
     return router;
     
@@ -106,7 +108,16 @@ export class DatabaseController {
       res.status(500).send("Fetch error");
     }
   }
-
+  
+  private async getTypeVehicles(req: Request, res: Response){
+    try{
+      const vehicles = await this.databaseService.getAllTypeVehicule();
+      res.status(200).json(vehicles);
+    }catch(e){
+      console.log(e);
+      res.status(500).send("Fetch error");
+    }
+  }
   private async getLastReservation(req: Request, res: Response){
     try{
         const lastReservation = await this.databaseService.getLastReservation();

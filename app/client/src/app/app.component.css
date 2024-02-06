@@ -1,8 +1,68 @@
-.title {
-  color: rgba(154, 117, 240, 1);
-  font-family: 'Roboto', sans-serif;
-  margin-left: 10px;
-  font-weight: bold;
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+.snip1189 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.snip1189 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1189 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+.snip1189 a {
+  padding: 1em 1.2em;
+  margin: 0.6em 0.4em;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.snip1189 a:before,
+.snip1189 a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.snip1189 a:before {
+  left: 0.2em;
+  top: 0.2em;
+  border-left: 3px solid #352bc0;
+  border-top: 3px solid #352bc0;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.snip1189 a:after {
+  right: 0.2em;
+  bottom: 0.2em;
+  border-right: 3px solid #352bc0;
+  border-bottom: 3px solid #352bc0;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.snip1189 a:hover,
+.snip1189 .current a {
+  color: #ffffff;
+}
+.snip1189 a:hover:before,
+.snip1189 .current a:before,
+.snip1189 a:hover:after,
+.snip1189 .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
 }
 
 .home {
@@ -31,20 +91,11 @@
   padding: 10px;
 }
 
-.main-nav {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  padding: 1%;
-}
 
-body {
-	margin: 0px;
-}
-
-.body {
+.body2 {
 	width: 100%;
 	height: 100%;
-	margine: 0px;
+	margin: 0px;
 	overflow: hidden;
 	position: relative;
 }
@@ -72,7 +123,7 @@ body {
 
 .tagline {
 	display: inline-block;
-	margin: 0px;
+	margin: 3px;
 }
 
 .main {
@@ -81,12 +132,12 @@ body {
 	height: 100%;
 	background: url(https://ssl.gstatic.com/atari/images/simple-header-blended-small.png)
 			center center no-repeat,
-		rgb(166, 169, 174);
+		rgb(130, 131, 132);
 	background-size: cover;
 }
 
 .textmain {
-	color: white;
+	color: rgb(179, 175, 175);
 	font-size: 20px;
 	font-family: "Lato", sans-serif;
 	text-align: center;
@@ -95,20 +146,6 @@ body {
 #name {
 	position: relative;
 	opacity: 1;
-}
-
-.nav {
-	overflow: hidden;
-	text-align: right;
-	width: 100%;
-	border: none;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.navtitle {
-	float: left;
-	padding-left: 20px;
 }
 
 a {
@@ -120,7 +157,7 @@ a {
 	position: relative;
 	align: right;
 	padding-top: 10px;
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-right: 20px;
 }
 
@@ -138,7 +175,7 @@ a {
 .newcars {
 	display: none;
 	position: absolute;
-	background-color: #f9f9f9;
+	background-color: #868484;
 	width: 608px;
 	text-align: left;
 	min-width: 160px;
@@ -151,7 +188,7 @@ a {
 .more_opt {
 	display: none;
 	position: absolute;
-	background-color: #f9f9f9;
+	background-color: #8d8b8b;
 	text-align: left;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -166,7 +203,7 @@ a {
 
 li a, .btn {
 	display: inline-block;
-	color: white;
+	color: rgb(135, 127, 127);
 	text-align: center;
 	text-decoration: none;
 }
@@ -236,7 +273,7 @@ li.options {
 }
 
 .options:hover {
-	background-color: #fff;
+	background-color: #c2c1c1;
 }
 
 .options:hover .more_opt {
@@ -264,7 +301,7 @@ li.options {
 	background-color: #1a1a1a;
 	box-sizing: border-box;
 	padding: 10px;
-	color: white;
+	color: rgb(172, 169, 169);
 	font-size: 20px;
 	font-family: "Lato", sans-serif;
 	cursor: pointer;
@@ -293,7 +330,7 @@ li.options {
 	margin-bottom: 30px;
 	display: inline-block;
 	width: 300px;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(158, 154, 154);
 	position: relative;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 	transition: 0.35s;

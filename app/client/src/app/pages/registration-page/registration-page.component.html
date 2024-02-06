@@ -1,34 +1,49 @@
-<div class="center-container">
-    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
-        <label for="member">Membre</label>
-        <select name="member" formControlName="member">
-          <optgroup label="Membre coop">
-            <option *ngFor="let option of coopMemberOptions" [value]="option">{{option}}</option>
-          </optgroup>
-          <optgroup label="Membre autopartage">
-            <option *ngFor="let option of carpoolingMemberOptions" [value]="option">{{option}}</option>
-          </optgroup>
-        </select>
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <fieldset>
+          <legend>Personal Details</legend>
+          <div class="form-input-container">
+              <label for="member">Membre</label>
+              <select name="member" formControlName="member">
+                  <optgroup label="Membre coop">
+                      <option *ngFor="let option of coopMemberOptions" [value]="option">{{option}}</option>
+                  </optgroup>
+                  <optgroup label="Membre autopartage">
+                      <option *ngFor="let option of carpoolingMemberOptions" [value]="option">{{option}}</option>
+                  </optgroup>
+              </select>
+          </div>
+      </fieldset>
+      <fieldset>
+          <legend>Reservation Details</legend>
+          <div class="form-input-container">
+              <label for="place">Emplacement</label>
+              <select name="place" formControlName="place" (change)="onSelect($event.target.value)">
+                  <option *ngFor="let option of placeOptions" [value]="option">{{option}}</option>
+              </select>
+          </div>
+          <div class="double-input">
+              <div class="form-input-container">
+                  <label for="startDate">Date de début</label>
+                  <input type="datetime-local" id="startDate" formControlName="startDate">
+              </div>
+              <div class="form-input-container">
+                  <label for="endDate">Date de fin</label>
+                  <input type="datetime-local" id="endDate" formControlName="endDate">
+              </div>
+          </div>
+          <div class="form-input-container">
+              <label for="requirements">Exigences supplémentaires</label>
+              <input type="text" id="requirements" name="requirements" formControlName="requirements">
+          </div>
+          <div class="double-input">
+              <div class="form-input-container">
+                  <label for="vehicle">Véhicule</label>
+                  <select name="vehicle" formControlName="vehicle">
+                      <option *ngFor="let option of vehicleOptions" [value]="option">{{option}}</option>
+                  </select>
+              </div>
+          </div>
+      </fieldset>
+      <button type="submit">Créer la réservation</button>
+  </form>
 
-        <label for="place">Emplacement</label>
-        <select name="place" formControlName="place" (change)="onSelect($event.target.value)">
-          <option *ngFor="let option of placeOptions" [value]="option">{{option}}</option>
-        </select>
-
-        <label>Date de début</label>
-        <input type="datetime-local" formControlName="startDate">
-
-        <label>Date de fin</label>
-        <input type="datetime-local" formControlName="endDate">
-
-        <label for="requirements">Exigences supplémentaires</label>
-        <input type="text" name="requirements" formControlName="requirements">
-
-        <label for="vehicle">Véhicule</label>
-        <select name="vehicle" formControlName="vehicle">
-          <option *ngFor="let option of vehicleOptions" [value]="option">{{option}}</option>
-        </select>
-
-        <button type="submit">Créer la réservation</button>
-      </form>
-</div>

@@ -85,4 +85,11 @@ export class DatabaseService {
     client.release();
     return result.rows;
     }
+
+    async getAllTypeVehicule(){
+      const client = await this.pool.connect();
+      const result = await client.query('SELECT * FROM carpooling.TypeVehicule;');
+      client.release();
+      return result.rows;
+      }
 }

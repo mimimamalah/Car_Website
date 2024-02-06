@@ -18,5 +18,6 @@ export class CarsPageComponent implements OnInit{
           this.vehicles = response;
         }
     });
-  
-  }}
+  }
+
+}
