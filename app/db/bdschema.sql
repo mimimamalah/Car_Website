@@ -86,6 +86,42 @@ CREATE TABLE IF NOT EXISTS MembreAutopartage (
     FOREIGN KEY (mId) REFERENCES Membre ON UPDATE CASCADE ON DELETE RESTRICT
 );
 
+CREATE TABLE IF NOT EXISTS MembreGold (
+	mId						SERIAL NOT NULL,
+	montantParts			INT NOT NULL CHECK (montantParts > 0),
+	cotisationAnnuelle		NUMERIC(7,2) NOT NULL CHECK (cotisationAnnuelle > 0),
+	reductionCotisation		NUMERIC(7,2) DEFAULT 0 CHECK (reductionCotisation < cotisationAnnuelle),
+	PRIMARY KEY (mId),
+	FOREIGN KEY (mId) REFERENCES Membre ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
+CREATE TABLE IF NOT EXISTS MembreSilver (
+	mId						SERIAL NOT NULL,
+	montantParts			INT NOT NULL CHECK (montantParts > 0),
+	cotisationAnnuelle		NUMERIC(7,2) NOT NULL CHECK (cotisationAnnuelle > 0),
+	reductionCotisation		NUMERIC(7,2) DEFAULT 0 CHECK (reductionCotisation < cotisationAnnuelle),
+	PRIMARY KEY (mId),
+	FOREIGN KEY (mId) REFERENCES Membre ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
+CREATE TABLE IF NOT EXISTS MembreBronze (
+	mId						SERIAL NOT NULL,
+	montantParts			INT NOT NULL CHECK (montantParts > 0),
+	cotisationAnnuelle		NUMERIC(7,2) NOT NULL CHECK (cotisationAnnuelle > 0),
+	reductionCotisation		NUMERIC(7,2) DEFAULT 0 CHECK (reductionCotisation < cotisationAnnuelle),
+	PRIMARY KEY (mId),
+	FOREIGN KEY (mId) REFERENCES Membre ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
+CREATE TABLE IF NOT EXISTS MembrePlatinium (
+	mId						SERIAL NOT NULL,
+	montantParts			INT NOT NULL CHECK (montantParts > 0),
+	cotisationAnnuelle		NUMERIC(7,2) NOT NULL CHECK (cotisationAnnuelle > 0),
+	reductionCotisation		NUMERIC(7,2) DEFAULT 0 CHECK (reductionCotisation < cotisationAnnuelle),
+	PRIMARY KEY (mId),
+	FOREIGN KEY (mId) REFERENCES Membre ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
 CREATE TYPE bill_status AS ENUM ('payed', 'unpaid');
 
 CREATE TABLE IF NOT EXISTS Facture (

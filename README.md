@@ -1,31 +1,31 @@
-# Reservation Website
+## Enhanced Reservation Website Project
 
-Simple Website project for a database course
+Refined and Expanded Website Project with Added Features
+
+The foundation of this project originated from a database course project. Currently, I'm enhancing its functionality and aesthetics to improve user experience and visual appeal.
 
 ## Pre-Launch Setup
 
 ### Server Setup
-1. Open the project directory.
-2. Open a terminal in the 'server' folder.
-3. Run `npm install`, followed by `npm ci`.
+1. Access the project directory.
+2. Open a terminal within the 'server' folder.
+3. Execute `npm install`, followed by `npm ci`.
 
 ### Client Setup
-1. Navigate to the 'client' folder.
-2. Execute `npm install`, followed by `npm ci`.
+1. Navigate to the 'client' directory.
+2. Run `npm install`, followed by `npm ci`.
 
 ### Database Configuration
-1. Open the `database.service.ts` file in the `server/services` directory.
-2. Modify the fields in the configuration to connect with PostgreSQL, specifically the `database` and `password`.
+1. Modify the configuration fields in the `database.service.ts` file located in the `server/services` directory to connect with PostgreSQL. Specifically, adjust the `database` and `password` parameters.
 
-## Launching the Application
+## Launching the Enhanced Application
 
 ### Starting the Server
-1. Go to the 'server' folder.
-2. Open a terminal and run `npm start`.
-    - You should see a message indicating that the server is running on port 3000.
+1. Navigate to the 'server' directory.
+2. Launch a terminal and execute `npm start`.
+    - You should receive a message indicating that the server is operational on port 3000.
 
 ### Starting the Client
-1. Move to the 'client' folder.
-2. Open a terminal and execute `npm start`.
-    - The application will open in a new browser page.
-
+1. Move to the 'client' directory.
+2. Open a terminal and run `npm start`.
+    - The application will automatically open in a new browser tab.

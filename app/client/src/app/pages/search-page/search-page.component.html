@@ -1,10 +1,15 @@
 <div class="main-container column">
     <div class="search-container">
-        <label for="searchQuery">Écrire le nom d'un membre </label>
-        <input type="text" [(ngModel)]="searchQuery" name="searchQuery" (keyup.enter)="search()">
+        <label for="searchQuery">Search a member</label>
+      
+      <div class="box">
+        <input type="text" class="input"[(ngModel)]="searchQuery" name="searchQuery" onmouseout="this.value = ''; this.blur();" (keyup.enter)="search()">
+        <i class="fas fa-search"></i>
     </div>
-    <button (click)="search()">Valider</button>
-    <p id="label-result">Résultats de la recherche :</p>
+      
+    </div>
+  
+    <p id="label-result">Results :</p>
     <div class="result-container column">
         <div class="sub-container column" *ngFor="let member of memberResult">            
             <app-member-details [member]="member"></app-member-details>
